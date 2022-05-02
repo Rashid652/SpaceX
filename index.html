@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX</title>
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="container">
+                <div class="header__nav-box">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                    <ul class="header__nav-list">
+                        <li><a href="#" class="header__nav-list-link">Falcon 9</a></li>
+                        <li><a href="#" class="header__nav-list-link">Falcon Heavy</a></li>
+                        <li><a href="#" class="header__nav-list-link">Dragon</a></li>
+                        <li><a href="#" class="header__nav-list-link">Updates</a></li>
+                    </ul>
+                    <ul class="header__nav-list-2">
+                        <li><a href="#" class="header__nav-list-2-link">About</a></li>
+                        <li><a href="#" class="header__nav-list-2-link">Gallery</a></li>
+                        <li><a href="#" class="header__nav-list-2-link">Shop</a></li>
+                    </ul>
+
+                    <div class="wrapper" style="display: none;">
+                        <div class="burger">
+                            <div class="burger__icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div id="burger__list" class="burger__list">
+                                <a href="#" class="header__nav-list-link burger__link">Falcon 9</a>
+                                <a href="#" class="header__nav-list-link burger__link">Falcon Heavy</a>
+                                <a href="#" class="header__nav-list-link burger__link">Dragon</a>
+                                <a href="#" class="header__nav-list-link burger__link">Updates</a>
+                                <a href="#" class="header__nav-list-2-link burger__link">About</a>
+                                <a href="#" class="header__nav-list-2-link burger__link">Gallery</a>
+                                <a href="#" class="header__nav-list-2-link burger__link">Shop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="header__planet">
+            <div class="header__planet-info">
+                <h1 class="info-title">Falcon Heavy</h1>
+                <p class="info-text">The most powerful operational rocket in the world by a factor of two</p>
+                <span class="line"></span>
+            </div>
+            <video class="video" autoplay muted loop>
+                <source src="videos/planet.mp4" type="video/mp4">
+            </video>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main__box">
+                <div class="main__box-left">
+                    <div class="box-left-top">
+                        <h2 class="left-title">Falcon Heavy Overview</h2>
+                        <div class="box-info">
+                            <div class="box-info-left">
+                                <p class="info-name">HEIGHT</p>
+                                <p class="info-name">DIAMETER</p>
+                                <p class="info-name">MASS</p>
+                                <p class="info-name">PAYLOAD TO LEO</p>
+                                <p class="info-name">PAYLOAD TO GTO</p>
+                                <p class="info-name">PAYLOAD TO MARS</p>
+                            </div>
+                            <div class="box-info-right">
+                                <p class="info-sell">70 m /<span class="info">229.6 ft</span></p>
+                                <p class="info-sell">12.2 m /<span class="info">39.9 ft</span></p>
+                                <p class="info-sell">1,420,788 kg /<span class="info">3,125,735 lb</span></p>
+                                <p class="info-sell">63,800 kg /<span class="info">140,660 lb</span></p>
+                                <p class="info-sell">26,700 kg /<span class="info">58,860 lb</span></p>
+                                <p class="info-sell">16,800 kg /<span class="info">37,040 lb</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-left-bottom">
+                        <h2 class="bottom-title">UNMATCHED PERFORMANCE</h2>
+                        <p class="bottom-text">With more than 5 million pounds of thrust at liftoff, Falcon Heavy is the
+                            most capable rocket flying. By comparison, the liftoff thrust of the Falcon Heavy equals
+                            approximately eighteen 747 aircraft at full power. Falcon Heavy can lift the equivalent of a
+                            fully loaded 737 jetliner—complete with passengers, luggage and fuel—to orbit.</p>
+                    </div>
+                </div>
+                <div class="main__box-right">
+                    <img src="images/falcon.png" alt="" class="box-img">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__box">
+                <a href="#"><img src="images/logo.png" alt=""></a>
+                <ul class="footer__box-list">
+                    <li><a href="#" class="footer__box-list-link">Twitter</a></li>
+                    <li><a href="#" class="footer__box-list-link">Youtube</a></li>
+                    <li><a href="#" class="footer__box-list-link">Instagram</a></li>
+                    <li><a href="#" class="footer__box-list-link">Flickr</a></li>
+                    <li><a href="#" class="footer__box-list-link">LinkedIn</a></li>
+                    <li><a href="#" class="footer__box-list-link">Privacy</a></li>
+                    <li><a href="#" class="footer__box-list-link">Policy</a></li>
+                </ul>
+                <div class="contact">
+                    <p class="post-list">For additional questions, contact</p>
+                    <a href="#" class="email"> rideshare@spacex.com</a>
+                </div>
+                <a href="#" class="btn">Contact us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var burger = document.querySelector('.burger'),
+            burgerIcon = document.querySelector('.burger__icon');
+
+        burgerIcon.addEventListener('click', function () {
+            burger.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>
